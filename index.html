@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IslaRuta Excursiones</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header>
+    <a href="#inicio" class="brand">Isla<span>Ruta</span></a>
+    <nav aria-label="Navegacion principal">
+      <a href="#excursiones">Excursiones</a>
+      <a href="#resumen">Resumen</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main id="inicio">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">ESCAPADAS CON SABOR LOCAL</p>
+        <h1>Tu proxima historia empieza <em>aqui.</em></h1>
+        <p>Compara excursiones autenticas por Republica Dominicana y elige como quieres vivir tu proximo dia libre.</p>
+        <a class="button" href="#excursiones">Ver excursiones</a>
+      </div>
+      <img src="img/saona-esencial.png" alt="Playa de Isla Saona">
+    </section>
+
+    <section class="catalog" id="excursiones">
+      <p class="eyebrow">ELIGE TU RITMO</p>
+      <h2>Excursiones para recordar</h2>
+      <div class="grid">
+        <article class="card">
+          <img src="img/salto-azul.png" alt="Salto Azul">
+          <div>
+            <h3>Salto Azul</h3>
+            <p>Hato Mayor · 1 dia · <strong>RD$ 2,450</strong></p>
+            <p>Caminata hasta una piscina natural de aguas turquesa.</p>
+            <button class="select" data-id="salto">Me interesa</button>
+          </div>
+        </article>
+        <article class="card">
+          <img src="img/saona-esencial.png" alt="Isla Saona">
+          <div>
+            <h3>Saona Esencial</h3>
+            <p>Bayahibe · 1 dia · <strong>RD$ 3,200</strong></p>
+            <p>Mar Caribe, arena blanca y piscina natural.</p>
+            <button class="select" data-id="saona">Me interesa</button>
+          </div>
+        </article>
+        <article class="card">
+          <img src="img/los-tres-ojos.png" alt="Los Tres Ojos">
+          <div>
+            <h3>Los Tres Ojos</h3>
+            <p>Santo Domingo · 4 h · <strong>RD$ 1,350</strong></p>
+            <p>Cuevas, lagos subterraneos y cultura dominicana.</p>
+            <button class="select" data-id="tres-ojos">Me interesa</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="summary" id="resumen" aria-live="polite">
+      <p class="eyebrow">TU SELECCION</p>
+      <h2 id="summary-title">Todavia no has seleccionado una excursion</h2>
+      <p id="summary-text">Pulsa “Me interesa” para ver aqui tu resumen.</p>
+      <button id="clear" class="clear" type="button">Limpiar seleccion</button>
+    </section>
+  </main>
+
+  <footer id="contacto">IslaRuta Excursiones · Proyecto academico de diseno responsivo</footer>
+  <script src="app.js"></script>
+</body>
+</html>
